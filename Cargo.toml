@@ -7,3 +7,6 @@ members = ["src-tauri"]
 strip = true
 lto = true
 opt-level = "s"
+
+[patch.crates-io]
+ wry = { git = "https://github.com/paulzql/wry.git", branch = "0.24.1-patch" }
