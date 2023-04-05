@@ -50,6 +50,8 @@ jobs:
         if: matrix.os != 'macos-latest'
         run: |
           pnpm fix:tray
+      - name: update deps
+        run: cargo update
 
       - run: pnpm build --target ${{ matrix.target }}
         env:
